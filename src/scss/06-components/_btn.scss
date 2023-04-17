@@ -1,0 +1,136 @@
+.btn {
+  background-color: var(--color-bg);
+  position: relative;
+  width: 100%;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: normal;
+  color: var(--color-light);
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  padding-left: 40px;
+  outline: none;
+  border: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+  letter-spacing: 1.5px;
+  height: 8.8rem;
+  padding-top: 12px;
+  @include media-breakpoint-down(xxl) {
+    font-size: 22px;
+
+    height: 84px;
+    padding-bottom: 0;
+    padding-top: 6px;
+  }
+  &:hover {
+    color: var(--color-light);
+    text-decoration-color: inherit;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+  }
+}
+
+.btn-left {
+  &::before {
+    left: 40px;
+    transform: rotate(-180deg);
+  }
+}
+.btn-right::before {
+  right: 40px;
+}
+.btn-right {
+  @include media-breakpoint-down(xl) {
+    padding-left: 22px;
+    padding-right: 80px;
+    text-align: left;
+  }
+}
+.btn-left,
+.btn-right {
+  &::before {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.3);
+    background-image: url("../images/ico/chevron-right.svg");
+    background-repeat: no-repeat;
+    background-size: 29px 36px;
+    top: 2.2rem;
+    background-position: center;
+    @include media-breakpoint-down(xxl) {
+      height: 46px;
+      width: 46px;
+      background-size: 18px 22px;
+      top: 1.1rem;
+      right: 21px;
+    }
+  }
+}
+
+.btn-volleyball,
+.btn-floorball {
+  font-size: 36px;
+  overflow: hidden;
+  padding-top: 8px;
+  line-height: normal;
+  &::after {
+    width: 165px;
+    height: 163px;
+    content: "";
+    position: absolute;
+    top: -12px;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include media-breakpoint-down(xl) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    padding-left: 22px;
+    padding-right: 80px;
+    text-align: left;
+  }
+  @include media-breakpoint-down(sm) {
+    // font-size: 16px;
+  }
+}
+.btn-floorball {
+  padding-right: 152px;
+  justify-content: flex-end;
+  @include media-breakpoint-down(xl) {
+    justify-content: flex-start;
+  }
+  &::after {
+    right: -32px;
+    background-image: url("../images/ico/florbal-btn.svg");
+    @include media-breakpoint-down(xl) {
+      right: 0;
+      left: -28px;
+      transform: rotate(180deg) !important;
+    }
+  }
+  &.btn-left::before {
+    @include media-breakpoint-down(xl) {
+      right: 21px !important;
+      left: auto;
+      transform: rotate(360deg) !important;
+      background-image: url("../images/ico/chevron-right.svg");
+    }
+  }
+}
+.btn-volleyball {
+  padding-left: 152px;
+  &::after {
+    left: -28px;
+    background-image: url("../images/ico/volejbal-btn.svg");
+  }
+}

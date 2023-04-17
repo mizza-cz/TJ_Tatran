@@ -1,0 +1,37 @@
+/*! purgecss start ignore */
+.slick-dots {
+  position: absolute;
+  bottom: 39px;
+  display: flex;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  li.slick-active button {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: var(--color-dark);
+      width: 7px;
+      height: 7px;
+      top: calc(50% - 3.5px);
+      left: calc(50% - 3.5px);
+      border-radius: 50%;
+    }
+  }
+  button {
+    display: block;
+    height: 16px;
+    width: 16px;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: var(--color-light);
+    text-indent: -624.9375rem;
+  }
+  li {
+    padding: 0 12px;
+  }
+}
+/*! purgecss end ignore */

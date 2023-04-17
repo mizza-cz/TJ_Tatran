@@ -1,0 +1,9 @@
+.main {
+  padding-top: 97px;
+  @include media-breakpoint-only(xl) {
+    padding-top: 64px;
+  }
+  @include media-breakpoint-down(xl) {
+    padding-top: 4.5rem;
+  }
+}
