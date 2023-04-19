@@ -1,0 +1,15 @@
+/*! purgecss start ignore */
+.text-primary {
+  color: var(--color-bg);
+}
+.padding-section {
+  padding-top: 6.45rem;
+  @include media-breakpoint-down(lg) {
+    padding-top: 3rem;
+  }
+}
+.section-wrapper {
+  max-width: 95.65rem;
+  margin: 0 auto;
+}
+/*! purgecss end ignore */

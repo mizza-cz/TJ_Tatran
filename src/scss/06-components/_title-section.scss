@@ -1,0 +1,19 @@
+.title-section {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-bg);
+  padding: 4.06rem 0 3.1rem;
+  @include media-breakpoint-down(lg) {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .h1 {
+    letter-spacing: 1.9px;
+    padding-left: 17.6rem;
+    @include media-breakpoint-only(xl) {
+      padding-left: 11rem;
+    }
+    @include media-breakpoint-down(xl) {
+      padding-left: 0;
+    }
+  }
+}

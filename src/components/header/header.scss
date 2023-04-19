@@ -412,6 +412,7 @@
     }
   }
 }
+
 @media all and (min-width: 320px) {
   .navbar .nav-item .dropdown-menu {
     display: none;
@@ -476,7 +477,9 @@
   &:focus {
     box-shadow: none;
   }
-
+  .dropdown-menu.show {
+    display: flex;
+  }
   // header fixed
 
   @include media-breakpoint-only(xl) {
