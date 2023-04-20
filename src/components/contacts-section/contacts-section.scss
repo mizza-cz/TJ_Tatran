@@ -1,0 +1,30 @@
+.contacts-section {
+  margin-bottom: 100px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+  }
+  .col-left {
+    .h2 {
+      margin-bottom: 48px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 24px;
+      }
+    }
+    ul + ul {
+      margin-top: 60px;
+      @include media-breakpoint-down(lg) {
+        margin-top: 32px;
+      }
+    }
+  }
+  .col-right {
+    padding-top: 48px;
+
+    &__box {
+      margin-bottom: 100px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
