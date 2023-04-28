@@ -1,0 +1,227 @@
+.sport-section {
+  margin-bottom: 40px;
+  .o-content {
+    padding-bottom: 0;
+  }
+  &__icon {
+    width: 64px;
+    @include media-breakpoint-down(md) {
+      width: 40px;
+    }
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+    svg,
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    padding-left: 17.6rem;
+    @include media-breakpoint-only(xl) {
+      padding-left: 11rem;
+    }
+    @include media-breakpoint-down(xl) {
+      padding-left: 0;
+    }
+    .h1 {
+      padding-left: 26px !important;
+      @include media-breakpoint-down(sm) {
+        padding-left: 0 !important;
+      }
+    }
+  }
+  &__menu {
+    border-bottom: 2px solid #e9e9e9;
+    padding: 13px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.02);
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+    padding-left: 17.6rem;
+    margin-left: -48px;
+    margin-right: -48px;
+    @include media-breakpoint-down(lg) {
+      margin-left: -20px;
+      margin-right: -20px;
+      flex-wrap: wrap;
+    }
+    @include media-breakpoint-only(xl) {
+      padding-left: 11rem;
+    }
+    @include media-breakpoint-down(xl) {
+      padding-left: 0;
+    }
+    li {
+      padding: 0 48px;
+      @include media-breakpoint-down(lg) {
+        padding: 0 20px;
+      }
+    }
+    a {
+      text-decoration-color: transparent;
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      transition: var(--transition);
+      color: var(--color-gray);
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+    .active {
+      text-decoration-color: inherit;
+    }
+  }
+}
+.tab-box__title {
+  color: var(--color-dark);
+  margin-bottom: 20px;
+  margin-top: 22px;
+}
+.tab-box__row {
+  margin-bottom: 60px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+  }
+  ul {
+    > li {
+      position: relative;
+      padding-left: 24px;
+      &::before {
+        content: "";
+        background-color: var(--color-dark);
+        position: absolute;
+        top: 14px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+      > ul {
+        margin: 16px 0 0;
+        > li {
+          &::before {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+// archive
+.sport-arhive {
+  .post {
+    max-width: 31rem;
+    margin: 0 auto 100px;
+    @include media-breakpoint-down(xl) {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+    &__more {
+      color: var(--color-bg);
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      display: block;
+      margin-top: 16px;
+      position: relative;
+      width: fit-content;
+      padding-right: 22px;
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 8px;
+        background-image: url("../images/ico/more.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 5px;
+      }
+    }
+    &__info {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    &__img {
+      aspect-ratio: 462/256;
+      margin-bottom: 1.5rem;
+    }
+    .h3 {
+      margin-bottom: 12px;
+      letter-spacing: 0.8px;
+      color: var(--color-dark);
+    }
+    p {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 130%;
+      display: block;
+      letter-spacing: 0.5px;
+    }
+    .p2 {
+      color: var(--color-gray);
+      margin-bottom: 16px;
+      font-weight: 300;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      line-height: 25px;
+    }
+  }
+}
+
+// contacts
+.sport-contacts {
+  &__inner {
+    margin-top: 64px;
+  }
+  &__item {
+    margin-bottom: 60px;
+    ul {
+      display: block;
+      font-size: 20px;
+      line-height: 180%;
+      a {
+        font-weight: 700;
+        text-decoration-color: transparent;
+        &:hover {
+          text-decoration-color: inherit;
+        }
+      }
+      li,
+      a {
+        font-size: 20px;
+        line-height: 180%;
+        margin-bottom: 2px;
+        letter-spacing: 0.8px;
+        color: #1b1b1b;
+      }
+    }
+
+    .h2 {
+      color: var(--color-bg);
+      margin-bottom: 20px;
+    }
+  }
+  &__img {
+    width: 17.467rem;
+    height: 17.467rem;
+    border-radius: 50%;
+    margin-bottom: 32px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
