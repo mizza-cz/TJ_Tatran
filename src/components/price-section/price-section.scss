@@ -1,0 +1,41 @@
+.price-section {
+  margin-bottom: 120px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 60px;
+  }
+  &__wrapper {
+    margin-top: 40px;
+    align-items: center;
+    @include media-breakpoint-down(lg) {
+      margin-top: 20px;
+    }
+  }
+  &__links {
+    display: block;
+    li {
+      margin: 20px auto;
+      display: block;
+    }
+    .btn {
+      max-width: 100%;
+      width: 100%;
+      @include media-breakpoint-down(md) {
+        font-size: 18px;
+        line-height: normal;
+      }
+    }
+  }
+  &__img {
+    aspect-ratio: 777/750;
+    max-width: 777px;
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+      aspect-ratio: 777/550;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
