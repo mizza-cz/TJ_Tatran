@@ -5,26 +5,24 @@
   }
   .col-left {
     .h2 {
-      margin-bottom: 48px;
+      margin-bottom: 20px;
       @include media-breakpoint-down(lg) {
-        margin-bottom: 24px;
+        margin-bottom: 12px;
       }
     }
     ul + ul {
-      margin-top: 60px;
+      margin-top: 40px;
       @include media-breakpoint-down(lg) {
-        margin-top: 32px;
+        margin-top: 24px;
       }
     }
   }
   .col-right {
-    padding-top: 48px;
-
+    @include media-breakpoint-down(lg) {
+      margin-top: 40px;
+    }
     &__box {
-      margin-bottom: 100px;
-      @include media-breakpoint-down(lg) {
-        margin-bottom: 40px;
-      }
+      margin-bottom: 40px;
     }
   }
 }

@@ -169,8 +169,8 @@ p {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   @include media-breakpoint-down(md) {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 42px;
   }
 }
 .o-content h2,
@@ -178,14 +178,14 @@ p {
   font-family: var(--title-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 44px;
   color: var(--color-light);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   @include media-breakpoint-down(md) {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 .o-content h3,
@@ -193,31 +193,18 @@ p {
   font-family: var(--title-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 42px;
   color: var(--color-light);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   @include media-breakpoint-down(md) {
-    font-size: 24px;
-    line-height: 44px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 .o-content h4,
 .h4 {
-  font-family: var(--title-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  @include media-breakpoint-down(md) {
-    font-size: 20px;
-  }
-}
-.o-content h5,
-.h5 {
   font-family: var(--title-font);
   font-style: normal;
   font-weight: 700;
@@ -227,6 +214,19 @@ p {
   letter-spacing: 1px;
   @include media-breakpoint-down(md) {
     font-size: 18px;
+  }
+}
+.o-content h5,
+.h5 {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  @include media-breakpoint-down(md) {
+    font-size: 17px;
   }
 }
 .o-content h6,
@@ -245,20 +245,20 @@ p {
 
 .p1 {
   font-style: normal;
-  font-size: 20px;
-  line-height: 150.02%;
+  font-size: 18px;
+  line-height: 140.02%;
 }
 .p2 {
   font-style: normal;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 22px;
 }
 .p3 {
   line-height: 20.72px;
-  font-size: 16px;
+  font-size: 15px;
 }
 .p4 {
   font-weight: 400;
   font-size: 14px;
-  line-height: 150%;
+  line-height: 140%;
 }
