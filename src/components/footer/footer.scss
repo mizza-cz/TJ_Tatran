@@ -63,7 +63,7 @@
     color: var(--color-light);
     padding-left: 68px;
     @include media-breakpoint-down(md) {
-      padding-left: 22px;
+      padding-left: 0px;
       margin-bottom: 51px;
     }
     li {
