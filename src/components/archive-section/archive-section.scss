@@ -1,0 +1,36 @@
+.archive-section {
+  margin-bottom: 60px;
+}
+.form-section {
+  margin-top: 54px;
+  margin-bottom: 52px;
+  button {
+    height: 65px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    padding-top: 4px;
+    font-family: Inter, sans-serif;
+  }
+}
+input {
+  width: 100%;
+  display: block;
+  border: 2px solid #c5c5c5;
+  height: 65px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  font-size: 20px;
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+    padding-left: 16px;
+    padding-right: 12px;
+  }
+}
