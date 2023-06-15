@@ -35,6 +35,12 @@
 }
 
 .post {
+  text-decoration: none;
+  &:hover {
+    .h2 {
+      text-decoration-color: transparent;
+    }
+  }
   &__img {
     margin-bottom: 15px;
     aspect-ratio: 516.62/356.18;
@@ -52,6 +58,9 @@
     }
     .h2 {
       color: var(--color-dark);
+      text-decoration: underline;
+      text-decoration-color: inherit;
+      transition: all 0.3s;
     }
   }
 }
