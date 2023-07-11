@@ -1,5 +1,13 @@
 .archive-section {
   margin-bottom: 60px;
+  .row.g-10 {
+    --bs-gutter-x: 65px;
+    --bs-gutter-y: 100px;
+    @include media-breakpoint-down(lg) {
+      --bs-gutter-x: 40px;
+      --bs-gutter-y: 40px;
+    }
+  }
 }
 .form-section {
   margin-top: 54px;

@@ -3,6 +3,9 @@
   @include media-breakpoint-down(xl) {
     margin-bottom: 40px;
   }
+  .row.g-10 {
+    --bs-gutter-x: 65px;
+  }
   &__top {
     display: flex;
     justify-content: space-between;
@@ -32,6 +35,10 @@
   line-height: 19px;
   color: var(--color-bg);
   margin-bottom: 28px;
+  &:hover {
+    color: var(--color-bg);
+    text-decoration-color: transparent;
+  }
 }
 
 .post {
