@@ -295,10 +295,16 @@
     text-decoration-line: underline;
     color: var(--color-light);
     margin-bottom: 28px;
-    display: block;
     position: relative;
-    padding-left: 55px;
-
+    display: flex;
+    align-items: center;
+    img,
+    svg {
+      display: block;
+      margin-right: 28px;
+      width: 24px;
+      height: 24px;
+    }
     &:hover {
       text-decoration-color: transparent;
     }
